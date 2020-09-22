@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		39870D58251A7CF6007CAC50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39870D57251A7CF6007CAC50 /* AppDelegate.swift */; };
+		39870D5A251A7CF6007CAC50 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39870D59251A7CF6007CAC50 /* SceneDelegate.swift */; };
+		39870D5C251A7CF6007CAC50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39870D5B251A7CF6007CAC50 /* ViewController.swift */; };
+		39870D5F251A7CF6007CAC50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39870D5D251A7CF6007CAC50 /* Main.storyboard */; };
+		39870D61251A7CFD007CAC50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39870D60251A7CFD007CAC50 /* Assets.xcassets */; };
+		39870D64251A7CFD007CAC50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39870D62251A7CFD007CAC50 /* LaunchScreen.storyboard */; };
+		39870D6F251A7CFD007CAC50 /* Mental_Health_ApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39870D6E251A7CFD007CAC50 /* Mental_Health_ApplicationTests.swift */; };
+		39870D7A251A7CFD007CAC50 /* Mental_Health_ApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39870D79251A7CFD007CAC50 /* Mental_Health_ApplicationUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		39870D6B251A7CFD007CAC50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39870D4C251A7CF6007CAC50 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39870D53251A7CF6007CAC50;
+			remoteInfo = "Mental Health Application";
+		};
+		39870D76251A7CFD007CAC50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39870D4C251A7CF6007CAC50 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39870D53251A7CF6007CAC50;
+			remoteInfo = "Mental Health Application";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		39870D54251A7CF6007CAC50 /* Mental Health Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mental Health Application.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		39870D57251A7CF6007CAC50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		39870D59251A7CF6007CAC50 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		39870D5B251A7CF6007CAC50 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		39870D5E251A7CF6007CAC50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		39870D60251A7CFD007CAC50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		39870D63251A7CFD007CAC50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		39870D65251A7CFD007CAC50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39870D6A251A7CFD007CAC50 /* Mental Health ApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mental Health ApplicationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		39870D6E251A7CFD007CAC50 /* Mental_Health_ApplicationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mental_Health_ApplicationTests.swift; sourceTree = "<group>"; };
+		39870D70251A7CFD007CAC50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39870D75251A7CFD007CAC50 /* Mental Health ApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mental Health ApplicationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		39870D79251A7CFD007CAC50 /* Mental_Health_ApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mental_Health_ApplicationUITests.swift; sourceTree = "<group>"; };
+		39870D7B251A7CFD007CAC50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		39870D51251A7CF6007CAC50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39870D67251A7CFD007CAC50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39870D72251A7CFD007CAC50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		39870D4B251A7CF6007CAC50 = {
+			isa = PBXGroup;
+			children = (
+				39870D56251A7CF6007CAC50 /* Mental Health Application */,
+				39870D6D251A7CFD007CAC50 /* Mental Health ApplicationTests */,
+				39870D78251A7CFD007CAC50 /* Mental Health ApplicationUITests */,
+				39870D55251A7CF6007CAC50 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		39870D55251A7CF6007CAC50 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				39870D54251A7CF6007CAC50 /* Mental Health Application.app */,
+				39870D6A251A7CFD007CAC50 /* Mental Health ApplicationTests.xctest */,
+				39870D75251A7CFD007CAC50 /* Mental Health ApplicationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		39870D56251A7CF6007CAC50 /* Mental Health Application */ = {
+			isa = PBXGroup;
+			children = (
+				39870D57251A7CF6007CAC50 /* AppDelegate.swift */,
+				39870D59251A7CF6007CAC50 /* SceneDelegate.swift */,
+				39870D5B251A7CF6007CAC50 /* ViewController.swift */,
+				39870D5D251A7CF6007CAC50 /* Main.storyboard */,
+				39870D60251A7CFD007CAC50 /* Assets.xcassets */,
+				39870D62251A7CFD007CAC50 /* LaunchScreen.storyboard */,
+				39870D65251A7CFD007CAC50 /* Info.plist */,
+			);
+			path = "Mental Health Application";
+			sourceTree = "<group>";
+		};
+		39870D6D251A7CFD007CAC50 /* Mental Health ApplicationTests */ = {
+			isa = PBXGroup;
+			children = (
+				39870D6E251A7CFD007CAC50 /* Mental_Health_ApplicationTests.swift */,
+				39870D70251A7CFD007CAC50 /* Info.plist */,
+			);
+			path = "Mental Health ApplicationTests";
+			sourceTree = "<group>";
+		};
+		39870D78251A7CFD007CAC50 /* Mental Health ApplicationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				39870D79251A7CFD007CAC50 /* Mental_Health_ApplicationUITests.swift */,
+				39870D7B251A7CFD007CAC50 /* Info.plist */,
+			);
+			path = "Mental Health ApplicationUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		39870D53251A7CF6007CAC50 /* Mental Health Application */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39870D7E251A7CFD007CAC50 /* Build configuration list for PBXNativeTarget "Mental Health Application" */;
+			buildPhases = (
+				39870D50251A7CF6007CAC50 /* Sources */,
+				39870D51251A7CF6007CAC50 /* Frameworks */,
+				39870D52251A7CF6007CAC50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mental Health Application";
+			productName = "Mental Health Application";
+			productReference = 39870D54251A7CF6007CAC50 /* Mental Health Application.app */;
+			productType = "com.apple.product-type.application";
+		};
+		39870D69251A7CFD007CAC50 /* Mental Health ApplicationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39870D81251A7CFD007CAC50 /* Build configuration list for PBXNativeTarget "Mental Health ApplicationTests" */;
+			buildPhases = (
+				39870D66251A7CFD007CAC50 /* Sources */,
+				39870D67251A7CFD007CAC50 /* Frameworks */,
+				39870D68251A7CFD007CAC50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				39870D6C251A7CFD007CAC50 /* PBXTargetDependency */,
+			);
+			name = "Mental Health ApplicationTests";
+			productName = "Mental Health ApplicationTests";
+			productReference = 39870D6A251A7CFD007CAC50 /* Mental Health ApplicationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		39870D74251A7CFD007CAC50 /* Mental Health ApplicationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39870D84251A7CFD007CAC50 /* Build configuration list for PBXNativeTarget "Mental Health ApplicationUITests" */;
+			buildPhases = (
+				39870D71251A7CFD007CAC50 /* Sources */,
+				39870D72251A7CFD007CAC50 /* Frameworks */,
+				39870D73251A7CFD007CAC50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				39870D77251A7CFD007CAC50 /* PBXTargetDependency */,
+			);
+			name = "Mental Health ApplicationUITests";
+			productName = "Mental Health ApplicationUITests";
+			productReference = 39870D75251A7CFD007CAC50 /* Mental Health ApplicationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		39870D4C251A7CF6007CAC50 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = "Gardar Benediktsson";
+				TargetAttributes = {
+					39870D53251A7CF6007CAC50 = {
+						CreatedOnToolsVersion = 11.7;
+					};
+					39870D69251A7CFD007CAC50 = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = 39870D53251A7CF6007CAC50;
+					};
+					39870D74251A7CFD007CAC50 = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = 39870D53251A7CF6007CAC50;
+					};
+				};
+			};
+			buildConfigurationList = 39870D4F251A7CF6007CAC50 /* Build configuration list for PBXProject "Mental Health Application" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 39870D4B251A7CF6007CAC50;
+			productRefGroup = 39870D55251A7CF6007CAC50 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				39870D53251A7CF6007CAC50 /* Mental Health Application */,
+				39870D69251A7CFD007CAC50 /* Mental Health ApplicationTests */,
+				39870D74251A7CFD007CAC50 /* Mental Health ApplicationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		39870D52251A7CF6007CAC50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39870D64251A7CFD007CAC50 /* LaunchScreen.storyboard in Resources */,
+				39870D61251A7CFD007CAC50 /* Assets.xcassets in Resources */,
+				39870D5F251A7CF6007CAC50 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39870D68251A7CFD007CAC50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39870D73251A7CFD007CAC50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		39870D50251A7CF6007CAC50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39870D5C251A7CF6007CAC50 /* ViewController.swift in Sources */,
+				39870D58251A7CF6007CAC50 /* AppDelegate.swift in Sources */,
+				39870D5A251A7CF6007CAC50 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39870D66251A7CFD007CAC50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39870D6F251A7CFD007CAC50 /* Mental_Health_ApplicationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39870D71251A7CFD007CAC50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39870D7A251A7CFD007CAC50 /* Mental_Health_ApplicationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		39870D6C251A7CFD007CAC50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 39870D53251A7CF6007CAC50 /* Mental Health Application */;
+			targetProxy = 39870D6B251A7CFD007CAC50 /* PBXContainerItemProxy */;
+		};
+		39870D77251A7CFD007CAC50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 39870D53251A7CF6007CAC50 /* Mental Health Application */;
+			targetProxy = 39870D76251A7CFD007CAC50 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		39870D5D251A7CF6007CAC50 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39870D5E251A7CF6007CAC50 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		39870D62251A7CFD007CAC50 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39870D63251A7CFD007CAC50 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		39870D7C251A7CFD007CAC50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		39870D7D251A7CFD007CAC50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		39870D7F251A7CFD007CAC50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Mental Health Application/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "GardarBenediktsson.Mental-Health-Application";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		39870D80251A7CFD007CAC50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Mental Health Application/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "GardarBenediktsson.Mental-Health-Application";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		39870D82251A7CFD007CAC50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Mental Health ApplicationTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "GardarBenediktsson.Mental-Health-ApplicationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mental Health Application.app/Mental Health Application";
+			};
+			name = Debug;
+		};
+		39870D83251A7CFD007CAC50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Mental Health ApplicationTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "GardarBenediktsson.Mental-Health-ApplicationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mental Health Application.app/Mental Health Application";
+			};
+			name = Release;
+		};
+		39870D85251A7CFD007CAC50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Mental Health ApplicationUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "GardarBenediktsson.Mental-Health-ApplicationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Mental Health Application";
+			};
+			name = Debug;
+		};
+		39870D86251A7CFD007CAC50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Mental Health ApplicationUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "GardarBenediktsson.Mental-Health-ApplicationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Mental Health Application";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		39870D4F251A7CF6007CAC50 /* Build configuration list for PBXProject "Mental Health Application" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39870D7C251A7CFD007CAC50 /* Debug */,
+				39870D7D251A7CFD007CAC50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39870D7E251A7CFD007CAC50 /* Build configuration list for PBXNativeTarget "Mental Health Application" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39870D7F251A7CFD007CAC50 /* Debug */,
+				39870D80251A7CFD007CAC50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39870D81251A7CFD007CAC50 /* Build configuration list for PBXNativeTarget "Mental Health ApplicationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39870D82251A7CFD007CAC50 /* Debug */,
+				39870D83251A7CFD007CAC50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39870D84251A7CFD007CAC50 /* Build configuration list for PBXNativeTarget "Mental Health ApplicationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39870D85251A7CFD007CAC50 /* Debug */,
+				39870D86251A7CFD007CAC50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 39870D4C251A7CF6007CAC50 /* Project object */;
+}
