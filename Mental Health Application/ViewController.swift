@@ -10,11 +10,25 @@ import UIKit
 
 class ViewController: UIViewController {
 
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
 
+    @IBAction func blockNrBtn(_ sender: Any) {
+        print("Block btn clicked")
+    }
+    
+    @IBAction func weightsBtn(_ sender: Any) {
+        print("Weight btn clicked")
+    }
+    
+    @IBAction func circleBtn(_ sender: Any) {
+        print("See Circle btn clicked")
+    }
+    
+    
 }
 

@@ -27,8 +27,8 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bdfdaedd-dd74-454b-8477-1ea4372c1f6b_200x200" translatesAutoresizingMaskIntoConstraints="NO" id="VGx-DA-mEf">
                                 <rect key="frame" x="107" y="98" width="200" height="200"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zkd-I1-5Ut">
-                                <rect key="frame" x="101" y="629" width="213" height="37.5"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zkd-I1-5Ut">
+                                <rect key="frame" x="101" y="629" width="213" height="40.5"/>
                                 <state key="normal" backgroundImage="square.fill" catalog="system">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Block Nr">
@@ -40,9 +40,12 @@
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <action selector="blockNrBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8B2-Rx-OR2"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hku-Ea-x1n">
-                                <rect key="frame" x="101" y="715" width="213" height="37.5"/>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hku-Ea-x1n">
+                                <rect key="frame" x="101" y="718" width="213" height="34.5"/>
                                 <state key="normal" backgroundImage="square.fill" catalog="system">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Weights">
@@ -54,6 +57,9 @@
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <action selector="weightsBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U7C-vr-BdT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QPP-CI-taO">
                                 <rect key="frame" x="101" y="546" width="213" height="37.5"/>
@@ -67,6 +73,9 @@
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <action selector="circleBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GNw-vh-8Gy"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
