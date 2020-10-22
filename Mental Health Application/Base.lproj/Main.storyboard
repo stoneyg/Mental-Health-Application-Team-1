@@ -12,12 +12,23 @@
         <!--BlockNr-->
         <scene sceneID="7lh-vx-shD">
             <objects>
-                <viewController title="BlockNr" id="8jC-lq-SBi" sceneMemberID="viewController">
+                <viewController title="BlockNr" id="8jC-lq-SBi" customClass="BlockNrViewController" customModule="Mental_Health_Application" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oIr-w9-a9q">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Write the Number" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Lw-43-4qe">
+                                <rect key="frame" x="79" y="425.5" width="256" height="45.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="lSe-6L-J4M"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0Lw-43-4qe" firstAttribute="centerX" secondItem="oIr-w9-a9q" secondAttribute="centerX" id="Rsd-J6-Ypk"/>
+                            <constraint firstItem="0Lw-43-4qe" firstAttribute="centerY" secondItem="oIr-w9-a9q" secondAttribute="centerY" id="oWV-0E-B1Q"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="UVb-pz-yJW"/>
                 </viewController>
@@ -146,22 +157,40 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZxW-sU-Md2">
+                                <rect key="frame" x="168" y="498" width="78" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J6I-f7-dgu">
+                                <rect key="frame" x="168" y="358.5" width="78" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mU8-tl-XTx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="1GA-HX-NiW" firstAttribute="centerX" secondItem="fut-kE-hYx" secondAttribute="centerX" id="6Yb-jr-Pad"/>
                             <constraint firstItem="1GA-HX-NiW" firstAttribute="centerY" secondItem="fut-kE-hYx" secondAttribute="centerY" id="Sjk-u6-ln3"/>
+                            <constraint firstItem="ZxW-sU-Md2" firstAttribute="top" secondItem="1GA-HX-NiW" secondAttribute="bottom" constant="30" id="ck8-FC-hJy"/>
+                            <constraint firstItem="J6I-f7-dgu" firstAttribute="centerX" secondItem="fut-kE-hYx" secondAttribute="centerX" id="dde-90-IQY"/>
+                            <constraint firstItem="ZxW-sU-Md2" firstAttribute="centerX" secondItem="fut-kE-hYx" secondAttribute="centerX" id="pJD-js-7dg"/>
+                            <constraint firstItem="1GA-HX-NiW" firstAttribute="top" secondItem="J6I-f7-dgu" secondAttribute="bottom" constant="30" id="pLY-FR-mdk"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Z1x-Wd-bdy"/>
                     <connections>
                         <outlet property="name1" destination="1GA-HX-NiW" id="yc4-hT-jZ5"/>
+                        <outlet property="name2" destination="ZxW-sU-Md2" id="xc9-Bq-jYc"/>
+                        <outlet property="name3" destination="J6I-f7-dgu" id="2pw-gz-qzn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CPs-0L-pNo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1939" y="138"/>
+            <point key="canvasLocation" x="1937.68115942029" y="137.94642857142856"/>
         </scene>
         <!--Weights-->
         <scene sceneID="9vf-d8-MIO">
