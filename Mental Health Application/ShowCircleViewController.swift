@@ -20,10 +20,13 @@ class ShowCircleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let number1 = Int.random(in: 0..<10)
+        let randNum1 = Int.random(in: 0..<10)
+        let randNum2 = Int.random(in: 0..<10)
+        
+        let number1 = ((2*5)/2)+4
         name1.text = String(number1)
         
-        let number2 = Int.random(in: 0..<10)
+        let number2 = randNum1*randNum2
         name2.text = String(number2)
         
         let number3 = Int.random(in: 0..<10)
