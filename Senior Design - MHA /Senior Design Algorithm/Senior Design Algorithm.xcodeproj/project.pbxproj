@@ -15,7 +15,7 @@
 		4B026F74252CCF3500D9D5ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B026F72252CCF3500D9D5ED /* LaunchScreen.storyboard */; };
 		4B026F7F252CCF3500D9D5ED /* Senior_Design_AlgorithmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B026F7E252CCF3500D9D5ED /* Senior_Design_AlgorithmTests.swift */; };
 		4B026F8A252CCF3500D9D5ED /* Senior_Design_AlgorithmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B026F89252CCF3500D9D5ED /* Senior_Design_AlgorithmUITests.swift */; };
-		4BE68567253428FC00679BE1 /* Contact Log - MHA.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4BE68566253428FC00679BE1 /* Contact Log - MHA.txt */; };
+		4B21EA1B253F5C7800F0D3B9 /* MHA - Contact Log.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4B21EA1A253F5C7700F0D3B9 /* MHA - Contact Log.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +50,7 @@
 		4B026F85252CCF3500D9D5ED /* Senior Design AlgorithmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Senior Design AlgorithmUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B026F89252CCF3500D9D5ED /* Senior_Design_AlgorithmUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Senior_Design_AlgorithmUITests.swift; sourceTree = "<group>"; };
 		4B026F8B252CCF3500D9D5ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4BE68566253428FC00679BE1 /* Contact Log - MHA.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Contact Log - MHA.txt"; sourceTree = "<group>"; };
+		4B21EA1A253F5C7700F0D3B9 /* MHA - Contact Log.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "MHA - Contact Log.csv"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +106,7 @@
 				4B026F6B252CCF3000D9D5ED /* ViewController.swift */,
 				4B026F6D252CCF3000D9D5ED /* Main.storyboard */,
 				4B026F70252CCF3500D9D5ED /* Assets.xcassets */,
-				4BE68566253428FC00679BE1 /* Contact Log - MHA.txt */,
+				4B21EA1A253F5C7700F0D3B9 /* MHA - Contact Log.csv */,
 				4B026F72252CCF3500D9D5ED /* LaunchScreen.storyboard */,
 				4B026F75252CCF3500D9D5ED /* Info.plist */,
 			);
@@ -234,7 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BE68567253428FC00679BE1 /* Contact Log - MHA.txt in Resources */,
+				4B21EA1B253F5C7800F0D3B9 /* MHA - Contact Log.csv in Resources */,
 				4B026F74252CCF3500D9D5ED /* LaunchScreen.storyboard in Resources */,
 				4B026F71252CCF3500D9D5ED /* Assets.xcassets in Resources */,
 				4B026F6F252CCF3000D9D5ED /* Main.storyboard in Resources */,
