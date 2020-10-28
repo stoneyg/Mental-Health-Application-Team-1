@@ -16,6 +16,8 @@
 		4B026F7F252CCF3500D9D5ED /* Senior_Design_AlgorithmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B026F7E252CCF3500D9D5ED /* Senior_Design_AlgorithmTests.swift */; };
 		4B026F8A252CCF3500D9D5ED /* Senior_Design_AlgorithmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B026F89252CCF3500D9D5ED /* Senior_Design_AlgorithmUITests.swift */; };
 		4B21EA1B253F5C7800F0D3B9 /* MHA - Contact Log.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4B21EA1A253F5C7700F0D3B9 /* MHA - Contact Log.csv */; };
+		4BFD1C712548EC2D001F6969 /* MHA - Contact Log.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4B21EA1A253F5C7700F0D3B9 /* MHA - Contact Log.csv */; };
+		4BFD1C722548EC2D001F6969 /* MHA - Contact Log.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4B21EA1A253F5C7700F0D3B9 /* MHA - Contact Log.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -245,6 +247,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BFD1C712548EC2D001F6969 /* MHA - Contact Log.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +255,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BFD1C722548EC2D001F6969 /* MHA - Contact Log.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
