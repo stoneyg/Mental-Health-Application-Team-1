@@ -27,19 +27,16 @@ class ViewController: UIViewController {
     
     @IBAction func readContactLogData(_ sender: Any) {
         
-        //printCSVData()
+        
         
         var data = readDataFromCSV(fileName: "MHA - Contact Log", fileType: "csv")
         data = cleanRows(file: data!)
         let csvRows = csv(data: data!)
         
-        
         for rows in csvRows {
-           
-            //var dct1 = Dictionary<String,AnyObject>()
-            
-            let name = rows[0]
-            let number = rows[1]
+    
+            //let name = rows[0]
+            //let number = rows[1]
             let formOfCom:String = rows[2]
             var formOfComNum1 = 0.0
             var formOfComNum2 = 0.0
@@ -56,14 +53,6 @@ class ViewController: UIViewController {
             var formOfComFT = 0.0
             var formOfComTxt = 0.0
             var formOfComTotal = 0.0
-            
-            
-            
-           /*( if impact.contains("Pos"){
-                impactNum = 1
-            }else {
-                impactNum = -1
-            }*/
             
             if formOfCom.contains("Call"){
                 (formOfComNum1 = formOfComNum1)
@@ -85,15 +74,15 @@ class ViewController: UIViewController {
             
             trustCalculation.append(trust)
             
-            
-            
-            if name.contains("Contact Name"){
+           /* if name.contains("Contact Name"){
                 break
-            }else {
+            }else {*/
                 dct.updateValue(rows as AnyObject, forKey: "Name")
                 dct.updateValue(rows as AnyObject, forKey: "Trust")
                 algorithm.append(dct)
-            }
+            //}
+            
+            print("Tracking People's Trust Algorithm: \(algorithm)")
             
            /*var nameVal = dct["Name"]
             
@@ -106,18 +95,16 @@ class ViewController: UIViewController {
             
                 
             }*/
+            
         }
-        
-        
         createCSV(from: algorithm)
+        
         trustCalculation.sort()
-        
-        
-        
-        
-       /* var algorithmData = readDataFromCSV(fileName: "Algorithm", fileType: "csv")
+        print("Trust Calculation: \(trustCalculation)")
+    
+       var algorithmData = readDataFromCSV(fileName: "Algorithm", fileType: "csv")
         algorithmData = cleanRows(file: algorithmData!)
-        let algorithmRows = csv(data: algorithmData ?? "Nothing here")*/
+        let algorithmCalc = csv(data: algorithmData ?? "Nothing here")
         
         /*for algRows in algorithmRows {
             trustCalculation.append(Double(algRows[1])!)
@@ -125,18 +112,7 @@ class ViewController: UIViewController {
         }*/
         
        // trustCalculation.sort()
-        
-        
-        
-        
-        
-        
-        
     }
-    
-    @IBOutlet weak var textView: UITextView!
-    
-   
     
     func createCSV(from recArray:[Dictionary<String,AnyObject>]) {
         
