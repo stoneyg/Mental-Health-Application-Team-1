@@ -16,10 +16,21 @@ class ViewController: UIViewController {
         super.viewDidLoad()
        
         //Asked for permission
-                UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge], completionHandler: {didAllow, error in
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.alert, .sound, .badge], completionHandler: {didAllow, error in
                 })
 
+        let content = UNMutableNotificationContent()
+        content.title = "Go Check on yo' friend HONEY"
+        content.subtitle = "Yo homie might be strugglin'"
+        content.body = "No fo'real sista, DO IT"
+        content.badge = 1
         
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 10, repeats: false)
+        
+        let request = UNNotificationRequest(identifier: "timerDone", content: content, trigger: trigger)
+        
+        center.add(request, withCompletionHandler: nil)
     }
 
 

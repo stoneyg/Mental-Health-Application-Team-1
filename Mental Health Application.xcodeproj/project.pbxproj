@@ -112,12 +112,12 @@
 				39870D5B251A7CF6007CAC50 /* ViewController.swift */,
 				393069FB253E696C00513D0A /* ShowCircleViewController.swift */,
 				39FD4EAB2549C32F00C23CB2 /* TableViewController.swift */,
+				3900BC1B2558A677000BEDBD /* WeightsViewController.swift */,
 				39FD4EB02549C39500C23CB2 /* FetchedContact.swift */,
 				39870D5D251A7CF6007CAC50 /* Main.storyboard */,
 				39870D60251A7CFD007CAC50 /* Assets.xcassets */,
 				39870D62251A7CFD007CAC50 /* LaunchScreen.storyboard */,
 				39870D65251A7CFD007CAC50 /* Info.plist */,
-				3900BC1B2558A677000BEDBD /* WeightsViewController.swift */,
 			);
 			path = "Mental Health Application";
 			sourceTree = "<group>";
