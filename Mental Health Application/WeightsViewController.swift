@@ -3,6 +3,7 @@
 //  Mental Health Application
 //
 //  Created by Jason with use of Charts Framework
+//  Requires Charts.xcodeproj and Charts.framework to be in main project settings
 //  Copyright © 2020 Gardar Benediktsson. All rights reserved.
 //
 
