@@ -1,0 +1,13 @@
+Within the weights view:
+	When first opening the page, the triangle animates in both X and Y
+	Weight sliders Call, Text and Facetime can be adjusted
+	When a slider is released a smaller animation is made
+	The whole graph can be rotated/spun
+
+Etiher animation time, direction and trigger can be changed. (Or fully removed)
+Colors for the inner lines, outer lines and the triangle and fill can be changed.
+The graph can be locked in place to avoid spinning.
+Fonts, font sizes and their colors can also be adjusted.
+
+Currently, the values when loading the view are preset but it is defined within an instance of a Struct named Weights that can be changed.
+Possibly latter it can be made to be given values through a function outside of the view.
