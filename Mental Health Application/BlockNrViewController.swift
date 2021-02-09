@@ -13,7 +13,9 @@ class BlockNrViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-       
+        var bla = 1;
+        
+        bla = 3 + 1
     }
     
 
