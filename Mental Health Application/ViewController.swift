@@ -17,6 +17,12 @@ class ViewController: UIViewController {
     }
 
 
+    
+    @IBAction func accountLinkBtn(_ sender: Any) {
+        print("AccountLink btn clicked")
+    }
+    
+    
     @IBAction func blockNrBtn(_ sender: Any) {
         print("Block btn clicked")
     }
