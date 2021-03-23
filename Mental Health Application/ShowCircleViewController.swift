@@ -10,12 +10,19 @@ import UIKit
 
 class ShowCircleViewController: UIViewController {
 
+    @IBOutlet weak var outerNum: UILabel!
     
-    @IBOutlet weak var name1: UILabel!
+    @IBOutlet weak var middleNum: UILabel!
     
-    @IBOutlet weak var name2: UILabel!
+    @IBOutlet weak var innerNum: UILabel!
     
-    @IBOutlet weak var name3: UILabel!
+    
+    @IBOutlet weak var innerCircleBtn: UIButton!
+    
+    @IBOutlet weak var middleCircleBtn: UIButton!
+    
+    @IBOutlet weak var outerCircleBtn: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,21 +32,43 @@ class ShowCircleViewController: UIViewController {
         
        // let number1 = ((2*5)/2)+4
        // name1.text = String(number1)
-        name1.text = String("Thor")
+        outerNum.text = String("25")
         
        // let number2 = randNum1*randNum2
        // name2.text = String(number2)
-        name2.text = String("Marie")
+        middleNum.text = String("10")
         
        // let number3 = Int.random(in: 0..<10)
        // name3.text = String(number3)
-        name3.text = String("Jonathan")
+        innerNum.text = String("5")
+        
+        
+        setupButtonStyle(button: innerCircleBtn, color: UIColor.yellow)
+        setupButtonStyle(button: middleCircleBtn, color: UIColor.orange)
+        setupButtonStyle(button: outerCircleBtn, color: UIColor.red)
+   
+    }
+    
+    @IBAction func clickInnerBtn(_ sender: Any) {
+        print("Inner btn clicked")
+    }
+    
+    @IBAction func clickMiddleBtn(_ sender: Any) {
+        print("Middle btn clicked")
+    }
+    
+    @IBAction func clickOuterBtn(_ sender: Any) {
+        print("Outer btn clicked")
     }
     
    
     
     
-    
+    func setupButtonStyle(button : UIButton, color: UIColor){
+       button.layer.cornerRadius = 0.5 * button.bounds.size.width
+       button.clipsToBounds = true
+       button.backgroundColor = color
+    }
     
     
 }
