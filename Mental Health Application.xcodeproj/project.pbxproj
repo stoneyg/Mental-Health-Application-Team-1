@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39139E69260BE21B00EE6901 /* CircleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39139E68260BE21B00EE6901 /* CircleListViewController.swift */; };
+		39139E71260C0A9100EE6901 /* CL1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39139E70260C0A9100EE6901 /* CL1ViewController.swift */; };
+		39139E76260C0C3900EE6901 /* CL2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39139E75260C0C3900EE6901 /* CL2ViewController.swift */; };
 		393069FC253E696C00513D0A /* ShowCircleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393069FB253E696C00513D0A /* ShowCircleViewController.swift */; };
 		39306A042540E2D100513D0A /* BlockNrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39306A032540E2D100513D0A /* BlockNrViewController.swift */; };
 		395F99AC25E70D3100E572EF /* LinkAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395F99AB25E70D3100E572EF /* LinkAccountViewController.swift */; };
@@ -38,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		39139E68260BE21B00EE6901 /* CircleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleListViewController.swift; sourceTree = "<group>"; };
+		39139E70260C0A9100EE6901 /* CL1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CL1ViewController.swift; sourceTree = "<group>"; };
+		39139E75260C0C3900EE6901 /* CL2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CL2ViewController.swift; sourceTree = "<group>"; };
 		393069FB253E696C00513D0A /* ShowCircleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCircleViewController.swift; sourceTree = "<group>"; };
 		39306A032540E2D100513D0A /* BlockNrViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockNrViewController.swift; sourceTree = "<group>"; };
 		395F99AB25E70D3100E572EF /* LinkAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkAccountViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +115,9 @@
 				39870D59251A7CF6007CAC50 /* SceneDelegate.swift */,
 				39870D5B251A7CF6007CAC50 /* ViewController.swift */,
 				393069FB253E696C00513D0A /* ShowCircleViewController.swift */,
+				39139E68260BE21B00EE6901 /* CircleListViewController.swift */,
+				39139E70260C0A9100EE6901 /* CL1ViewController.swift */,
+				39139E75260C0C3900EE6901 /* CL2ViewController.swift */,
 				39306A032540E2D100513D0A /* BlockNrViewController.swift */,
 				395F99AB25E70D3100E572EF /* LinkAccountViewController.swift */,
 				39870D5D251A7CF6007CAC50 /* Main.storyboard */,
@@ -269,11 +278,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				395F99AC25E70D3100E572EF /* LinkAccountViewController.swift in Sources */,
+				39139E76260C0C3900EE6901 /* CL2ViewController.swift in Sources */,
+				39139E71260C0A9100EE6901 /* CL1ViewController.swift in Sources */,
 				39306A042540E2D100513D0A /* BlockNrViewController.swift in Sources */,
 				39870D5C251A7CF6007CAC50 /* ViewController.swift in Sources */,
 				39870D58251A7CF6007CAC50 /* AppDelegate.swift in Sources */,
 				39870D5A251A7CF6007CAC50 /* SceneDelegate.swift in Sources */,
 				393069FC253E696C00513D0A /* ShowCircleViewController.swift in Sources */,
+				39139E69260BE21B00EE6901 /* CircleListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

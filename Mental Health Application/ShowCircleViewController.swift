@@ -32,15 +32,15 @@ class ShowCircleViewController: UIViewController {
         
        // let number1 = ((2*5)/2)+4
        // name1.text = String(number1)
-        outerNum.text = String("25")
+        outerNum.text = String("12")
         
        // let number2 = randNum1*randNum2
        // name2.text = String(number2)
-        middleNum.text = String("10")
+        middleNum.text = String("7")
         
        // let number3 = Int.random(in: 0..<10)
        // name3.text = String(number3)
-        innerNum.text = String("5")
+        innerNum.text = String("3")
         
         
         setupButtonStyle(button: innerCircleBtn, color: UIColor.yellow)
