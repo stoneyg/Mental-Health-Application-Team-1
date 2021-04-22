@@ -8,6 +8,17 @@
 
 import UIKit
 
+
+let array = ["Eg",
+             "Er",
+             "Kongurinn"]
+ 
+
+
+
+var array1 = [""]
+
+
 class ShowCircleViewController: UIViewController {
 
     @IBOutlet weak var outerNum: UILabel!
@@ -23,9 +34,17 @@ class ShowCircleViewController: UIViewController {
     
     @IBOutlet weak var outerCircleBtn: UIButton!
     
+    var algList = [[""]]
+
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("here you are after you have moved it for the 2nd time")
+        print(algList)
+        print("")
+        //Create the new list with only the right spots
+        array1 = createArrays(list: algList)
         
        // let randNum1 = Int.random(in: 0..<10)
        // let randNum2 = Int.random(in: 0..<10)
@@ -55,13 +74,22 @@ class ShowCircleViewController: UIViewController {
     
     @IBAction func clickMiddleBtn(_ sender: Any) {
         print("Middle btn clicked")
+
     }
     
     @IBAction func clickOuterBtn(_ sender: Any) {
         print("Outer btn clicked")
+       
     }
     
-   
+    //Move the array from one view to the other
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "middleCircle" {
+            
+            let destinationController = segue.destination as! CL1ViewController
+            destinationController.name = array1
+        }
+    }
     
     
     func setupButtonStyle(button : UIButton, color: UIColor){
@@ -71,4 +99,22 @@ class ShowCircleViewController: UIViewController {
     }
     
     
+    func createArrays(list: Array<Array<String>>) -> Array<String>{
+        let array1 = [list[0][0], list[1][0], list[2][0]]
+        
+        print(array1)
+        return array1
+    }
+                
+            
+        
+         
+        
+    
+     
+
+    
 }
+
+
+

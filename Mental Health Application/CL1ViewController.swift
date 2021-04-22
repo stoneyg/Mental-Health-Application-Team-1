@@ -8,8 +8,9 @@
 
 import UIKit
 
-class CL1ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+class CL1ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+   /*
     let name = [
         "Chris",
         "Matt",
@@ -19,12 +20,20 @@ class CL1ViewController: UIViewController, UITableViewDelegate, UITableViewDataS
         "Scott",
         "Marie"
     ]
+   */
+    
+    
+     var name: Array<String> = [""]
+   
+    
     
     @IBOutlet var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+      print(name)
+        
         tableView.delegate = self
         tableView.dataSource = self
         
@@ -42,6 +51,7 @@ class CL1ViewController: UIViewController, UITableViewDelegate, UITableViewDataS
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
         cell.textLabel?.text = name[indexPath.row]
+
         
         return cell
     }
