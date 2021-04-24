@@ -89,7 +89,20 @@ class ShowCircleViewController: UIViewController {
             let destinationController = segue.destination as! CL1ViewController
             destinationController.name = array1
         }
+        if segue.identifier == "innerCircle" {
+            
+            let destinationController = segue.destination as! CircleListViewController
+            destinationController.name = array1
+        }
+        else if segue.identifier == "outerCircle" {
+            
+            let destinationController = segue.destination as! CL2ViewController
+            destinationController.name = array1
+        }
     }
+    
+    
+    
     
     
     func setupButtonStyle(button : UIButton, color: UIColor){

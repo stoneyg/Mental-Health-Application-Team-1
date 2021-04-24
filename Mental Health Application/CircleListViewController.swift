@@ -11,14 +11,15 @@ import UIKit
 class CircleListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
-  
+  /*
     let name = [
         "Mom",
         "Dad",
         "Andres"
     ]
-
- 
+*/
+    
+    var name: Array<String> = [""]
     
     @IBOutlet var tableView: UITableView!
 
