@@ -8,6 +8,7 @@
 
 import UIKit
 import UniformTypeIdentifiers
+import Contacts
 
 // JSON file structure
 //The entire json is an array of reactions
@@ -50,9 +51,57 @@ var maxTrust = 100.0
 var minCompressionRatio = 0.0
 var maxCompressionRatio = 10.0
 var arrOfContactInteractionList = [[String]]()
+//var testValueArray = ["Gabrielle Stoney", "lsadkjf", "lskdjflaksdfj"]
+
+// Dictionary to serve as the contact list
+var contactDict: [String: Double] = [
+
+
+    "Gabrielle Stoney": 0.0,
+
+    "Seth Stoney": 0.0,
+
+    "Simone Stoney": 0.0,
+
+    "Colt Atwell": 0.0,
+
+    "Lauren Atwell": 0.0,
+
+    "Addison Salimi": 0.0,
+
+    "Aiden Salimi": 0.0,
+
+    "Joanne Salimi": 0.0,
+
+    "Lena Azar": 0.0,
+
+    "Nicole Gargano": 0.0,
+
+    "Valerie Stoney": 0.0,
+
+    "Harrison Dinius": 0.0,
+
+    "Christen Atwell": 0.0,
+
+    "James Atwell": 0.0,
+
+    "Lily Smith": 0.0,
+
+    "Aaron Feltcher": 0.0,
+
+    "Jasmin Gomez": 0.0,
+
+    "Anjali James": 0.0,
+
+    "Kayla Rickey": 0.0,
+
+    "Delina Biniam": 0.0,
+
+]
 
 class ViewController: UIViewController {
-
+    var testValueArray = [""]
+    
     var contactArray:[Dictionary<String,AnyObject>] = Array()
         
         //The ReactionElement variable
@@ -63,8 +112,47 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        /* if contactDict.isEmpty {
+            fetchContacts()
+        }*/
     }
-
+    
+    // This function requests access to user contacts, then takes and stores necessary contact data in an array
+    private func fetchContacts() {
+        print("Attempting Contact Fetch")
+                
+        let store = CNContactStore()
+        store.requestAccess(for: .contacts) { (granted, error) in
+        if let error = error {
+            // The app failed to request access to contacts
+            print("Acess Request Failed", error)
+            return
+        }
+                    
+        if granted {
+            // User allowed app to access contacts, moving forward
+            print("Access Granted")
+                        
+            // Use keys to identify what info the pull
+            let keys = [CNContactGivenNameKey, CNContactFamilyNameKey]
+            let request = CNContactFetchRequest(keysToFetch: keys as [CNKeyDescriptor])
+                        
+            // Go through each contact and store the data with the FetchedContact "object" to store in an array
+            do {
+                try store.enumerateContacts(with: request, usingBlock: { (contact, stopPointer) in
+                contactDict.updateValue(0.0, forKey: contact.givenName + " " + contact.familyName)
+                //print(self.contactDict)
+                })
+            } catch let error {
+                // Could not read one/all of the contacts
+                print("Failed Contact Enumeration", error)
+                }
+            } else {
+                // User denied the app permission to contacts
+                print("Access Denied")
+            }
+        }
+    }
 
     
     @IBAction func accountLinkBtn(_ sender: Any) {
@@ -112,7 +200,7 @@ class ViewController: UIViewController {
                         let reactionName = fullTitle[1].components(separatedBy: "'s")
                         let finalName = reactionName[0]
                         interactionValid = true
-                        readOrWrite(finalName: finalName, interactionValid: interactionValid, indexCount: indexCount)
+                        searchContacts(finalName:finalName, interactionValid:interactionValid, indexCount:indexCount)
                             indexCount = indexCount + 1
                            // print(finalName)
                     } else if (reaction.title.contains("liked")){
@@ -120,7 +208,7 @@ class ViewController: UIViewController {
                         let reactionName = fullTitle[1].components(separatedBy: "'s")
                         let finalName = reactionName[0]
                         interactionValid = true
-                        readOrWrite(finalName: finalName, interactionValid: interactionValid, indexCount: indexCount)
+                        searchContacts(finalName:finalName, interactionValid:interactionValid, indexCount:indexCount)
                         indexCount = indexCount + 1
                         //print(finalName)
                     } else {
@@ -128,7 +216,7 @@ class ViewController: UIViewController {
                             let reactionName = fullTitle[1].components(separatedBy: "'s")
                             let finalName = reactionName[0]
                             interactionValid = true
-                            readOrWrite(finalName: finalName, interactionValid: interactionValid, indexCount: indexCount)
+                        searchContacts(finalName:finalName, interactionValid:interactionValid, indexCount:indexCount)
                             indexCount = indexCount + 1
                             //print(finalName)
                     }
@@ -161,7 +249,7 @@ class ViewController: UIViewController {
                         let replyName = fullTitle[1].components(separatedBy: "'s")
                         let finalName = replyName[0]
                         //print(finalName)
-                        readOrWrite(finalName:finalName, interactionValid:interactionValid, indexCount:count)
+                        searchContacts(finalName:finalName, interactionValid:interactionValid, indexCount:count)
                         count += 1
                     // If not, then it was a reply to another comment
                     } else {
@@ -170,7 +258,7 @@ class ViewController: UIViewController {
                         let replyName = fullTitle[1].components(separatedBy: "'s")
                         let finalName = replyName[0]
                         //print(finalName)
-                        readOrWrite(finalName:finalName, interactionValid:interactionValid, indexCount:count)
+                        searchContacts(finalName:finalName, interactionValid:interactionValid, indexCount:count)
                         count += 1
                     }
                     //print("**********")
@@ -182,95 +270,46 @@ class ViewController: UIViewController {
         }
         
         // Do any additional setup after loading the view.
-        if let localData = readLocalFile(forName: "data"){
+        if let localData = readLocalFile(forName: "posts_and_comments"){
             parse(jsonData: localData)
+            
         }
         // Scan Facebook comments
-        if let localData = readLocalFile(forName: "comments"){
+        if let localData = readLocalFile(forName: "fake_comments"){
             parseComments(jsonData: localData)
         }
-        print(sortAlgorithm(arrOfContactList: arrOfContactInteractionList))
+        //print(sortAlgorithm(arrOfContactList: arrOfContactInteractionList))
         
         let defaults = UserDefaults.standard
         defaults.set(arrOfContactInteractionList, forKey: "ContactList")
     }
     
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    
+        for contact in testValueArray {
+            if (contactDict[contact] != nil) {
+                contactDict.removeValue(forKey: contact)
+            }
+        }
         if segue.identifier == "circle" {
             
             let destinationController = segue.destination as! ShowCircleViewController
-            destinationController.algList = sortAlgorithm(arrOfContactList: arrOfContactInteractionList)
+            //destinationController.algList = sortAlgorithm(arrOfContactList: arrOfContactInteractionList)
+            destinationController.algList = contactDict
         }
     }
     
     
 }
 
-func readOrWrite(finalName:String, interactionValid:Bool, indexCount:Int) {
-    
-    var arrOfContactInteractions = [[String]]()
-    var name:String = ""
-    var interaction:Int = 0
-    var trustVal:String = ""
-            
-    if indexCount == 0{
-        //print("Print second time of name: ", finalName, "\n")
-        name = finalName
-        if interactionValid == true{
-            interaction = interaction + 1
-        }
-        
-        trustVal = "0"
-        
-        let trustValCalc = algorithmTrustCalculation(currentTrust: Double(trustVal) ?? 0.0)
-        arrOfContactInteractionList.append([name, String(interaction), String(trustValCalc)])
-    
-    } else{
-    
-        //print("exectured start of rows\n")
-                
-        var updatedContact:Bool = false
-        var countForLoop = 0
-                    
-        for row in arrOfContactInteractionList.enumerated(){
-                    
-            if row.element[0].contains(finalName){
-                updatedContact = true
-                trustVal = row.element[2]
-                           
-                let trustValCalc = algorithmTrustCalculation(currentTrust: Double(trustVal) ?? 0.0)
-                           
-                if interactionValid == true{
-                    interaction = Int(row.element[1]) ?? 0 + 1
-                }
-                            
-                arrOfContactInteractionList[row.offset][0] = finalName
-                arrOfContactInteractionList[row.offset][1] = String(interaction)
-                arrOfContactInteractionList[row.offset][2] = String(trustValCalc)
-                        
-                break
-            }else {
-                            
-                updatedContact = false
-                            
-            }
-                countForLoop = countForLoop + 1
-        }
-                    
-        if updatedContact != true{
-                        
-            name = finalName
-            //print("Last print of name: ", finalName, "\n")
-                        
-            if interactionValid == true{
-                interaction = interaction + 1
-            }
-                        
-            trustVal = "0"
-                        
-            let trustValCalc = algorithmTrustCalculation(currentTrust: Double(trustVal) ?? 0.0)
-                arrOfContactInteractionList.append([name, String(interaction), String(trustValCalc)])
-        }
+func searchContacts(finalName:String, interactionValid:Bool, indexCount:Int){
+    print("Final name: " + finalName + "\n")
+    if contactDict[finalName] != nil{
+        print("Final name was found as key\n")
+        let trustVal = contactDict[finalName] ?? 0.0
+        let trustValCalc = algorithmTrustCalculation(currentTrust: trustVal )
+        contactDict[finalName] = trustValCalc
     }
 }
     
@@ -293,57 +332,9 @@ func algorithmTrustCalculation(currentTrust:Double) -> Double{
     deltaTrust = maxCompressionRatio - (compressionRatio*currentTrust)
     trustVal = (trustVal + deltaTrust)
     
-    /*
-     
-     trustVal = (trustVal) - minWaning*((1+waningRate)-((trustVal)/(maxTrust)))
-     
-     //I am not sure what t-1 value is suppose to be. I also figured out for the demo why the mnumbers were all the same...the previous trust value was not actually being used throughout the process.
-     */
-    
-    //print("New Trust: ", trustVal, "\n")
+    //trustVal = (trustVal) - minWaning*((1+waningRate)-((trustVal)/(maxTrust)))
     return trustVal
 }
 
-func createInteractionCSV(from recArray:[Dictionary<String, AnyObject>]){
-
-    var titleString = "\("Contact Name"), \("Facebook Interaction Count"), \("Facebook Trust Value")\n\n"
-    
-    for dct in recArray{
-        
-        titleString = titleString.appending("\(String(describing: dct["Name"]!)), \(String(describing: dct["Interaction"]!)), \(String(describing: dct["Trust"]!))\n")
-    }
-
-    let fileManager = FileManager.default
-    do{
-        
-        let path = try fileManager.url(for: .documentDirectory, in: .allDomainsMask, appropriateFor: nil, create: false)
-        let fileURL = path.appendingPathComponent("Contact Interaction List.csv")
-        try titleString.write(to: fileURL, atomically: true, encoding: .utf8)
-    } catch{
-        print("Error Occured")
-    }
-}
-
-func sortAlgorithm(arrOfContactList:[[String]]) -> [[String]]{
-    print("Sort function did run: \n")
-    print("Number of contacts in contact list: ", arrOfContactList.count, "\n")
-    var sortedContactList = arrOfContactList
-    let last_position = arrOfContactList.count - 1
-    var swap = true
-    while swap == true {
-        swap = false
-        for i in 0..<last_position {
-            if arrOfContactList[i][2] < arrOfContactList[i + 1][2] {
-                let temp = arrOfContactList[i]
-                sortedContactList[i] = sortedContactList[i+1]
-                sortedContactList[i+1] = temp
-            }
-        }
-        swap = false
-    }
-    //print(sortedContactList)
-    return sortedContactList
-    
-}
 
 

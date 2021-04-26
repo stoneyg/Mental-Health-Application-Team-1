@@ -14,6 +14,8 @@
 		39306A042540E2D100513D0A /* BlockNrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39306A032540E2D100513D0A /* BlockNrViewController.swift */; };
 		3940BB1E2630D3A300D0FB77 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 3940BB1D2630D3A300D0FB77 /* data.json */; };
 		3940BB232630D3AA00D0FB77 /* comments.json in Resources */ = {isa = PBXBuildFile; fileRef = 3940BB222630D3AA00D0FB77 /* comments.json */; };
+		3940BB2826360D7300D0FB77 /* posts_and_comments.json in Resources */ = {isa = PBXBuildFile; fileRef = 3940BB2726360D7300D0FB77 /* posts_and_comments.json */; };
+		3940BB2D263619C800D0FB77 /* fake_comments.json in Resources */ = {isa = PBXBuildFile; fileRef = 3940BB2C263619C800D0FB77 /* fake_comments.json */; };
 		395F99AC25E70D3100E572EF /* LinkAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395F99AB25E70D3100E572EF /* LinkAccountViewController.swift */; };
 		39870D58251A7CF6007CAC50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39870D57251A7CF6007CAC50 /* AppDelegate.swift */; };
 		39870D5A251A7CF6007CAC50 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39870D59251A7CF6007CAC50 /* SceneDelegate.swift */; };
@@ -50,6 +52,8 @@
 		39306A032540E2D100513D0A /* BlockNrViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockNrViewController.swift; sourceTree = "<group>"; };
 		3940BB1D2630D3A300D0FB77 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		3940BB222630D3AA00D0FB77 /* comments.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = comments.json; sourceTree = "<group>"; };
+		3940BB2726360D7300D0FB77 /* posts_and_comments.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = posts_and_comments.json; sourceTree = "<group>"; };
+		3940BB2C263619C800D0FB77 /* fake_comments.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fake_comments.json; sourceTree = "<group>"; };
 		395F99AB25E70D3100E572EF /* LinkAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkAccountViewController.swift; sourceTree = "<group>"; };
 		39870D54251A7CF6007CAC50 /* Mental Health Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mental Health Application.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		39870D57251A7CF6007CAC50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -127,6 +131,8 @@
 				39870D5D251A7CF6007CAC50 /* Main.storyboard */,
 				3940BB1D2630D3A300D0FB77 /* data.json */,
 				3940BB222630D3AA00D0FB77 /* comments.json */,
+				3940BB2726360D7300D0FB77 /* posts_and_comments.json */,
+				3940BB2C263619C800D0FB77 /* fake_comments.json */,
 				39870D60251A7CFD007CAC50 /* Assets.xcassets */,
 				39870D62251A7CFD007CAC50 /* LaunchScreen.storyboard */,
 				39870D65251A7CFD007CAC50 /* Info.plist */,
@@ -257,7 +263,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				39870D64251A7CFD007CAC50 /* LaunchScreen.storyboard in Resources */,
+				3940BB2826360D7300D0FB77 /* posts_and_comments.json in Resources */,
 				39870D61251A7CFD007CAC50 /* Assets.xcassets in Resources */,
+				3940BB2D263619C800D0FB77 /* fake_comments.json in Resources */,
 				39870D5F251A7CF6007CAC50 /* Main.storyboard in Resources */,
 				3940BB232630D3AA00D0FB77 /* comments.json in Resources */,
 				3940BB1E2630D3A300D0FB77 /* data.json in Resources */,

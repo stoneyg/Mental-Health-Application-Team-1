@@ -9,23 +9,7 @@
 import UIKit
 
 class CL2ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-/*
-    let name = [
-        "Gardar",
-        "Gummi",
-        "Eva",
-        "Ragnheidur",
-        "Anika",
-        "Benedikt",
-        "Audur",
-        "Josh",
-        "Jordan",
-        "Rachel",
-        "Dana",
-        "Hanna"
-    ]
-    */
-    
+
     var name: Array<String> = [""]
    
     @IBOutlet weak var tableView: UITableView!
