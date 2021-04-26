@@ -111,10 +111,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        /* if contactDict.isEmpty {
-            fetchContacts()
-        }*/
+        
     }
     
     // This function requests access to user contacts, then takes and stores necessary contact data in an array
